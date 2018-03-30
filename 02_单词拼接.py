@@ -7,22 +7,14 @@
 '''
 
 
-# aloha
-# dog
-# arachnid
-# gopher
-# tiger
-# rat
-# 拼接后：aloha.arachnid.dog.gopher.rat.tiger
-
 def main():
-    # word_list = []
-    # num = int(input("请输入单词的个数:"))
-    # for i in range(num):
-    #     word_str = input("请输入第%d个单词:" % (i + 1))
-    #     word_list.append(word_str)
+     word_list = []
+     num = int(input("请输入单词的个数:"))
+     for i in range(num):
+         word_str = input("请输入第%d个单词:" % (i + 1))
+         word_list.append(word_str)
 
-    word_list = ['aloha', 'dog', 'arachnid', 'gopher', 'tiger', 'rat']
+    #word_list = ['aloha', 'dog', 'arachnid', 'gopher', 'tiger', 'rat']
     old_len = len(word_list)
     front_world = word_list[0]
     result_word = []
