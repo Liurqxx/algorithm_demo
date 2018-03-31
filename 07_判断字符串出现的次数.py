@@ -13,7 +13,7 @@ def main():
     for i in range(len(str2) - len(str1)):
         if str2[i:i + len(str1)] == str1:
             count += 1
-    print(count)
+    print('总次数:',count)
 
 
 if __name__ == '__main__':
