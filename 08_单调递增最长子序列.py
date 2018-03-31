@@ -27,7 +27,7 @@ def main():
         list.append(count)
     # 排序输出最大值
     list.sort(reverse=True)
-    print(list[0])
+    print('最长子字符串的长度:',list[0])
 
 
 if __name__ == '__main__':
