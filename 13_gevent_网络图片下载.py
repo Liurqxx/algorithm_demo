@@ -3,14 +3,13 @@
 
 
 import urllib.request
-import time
 import gevent
 from gevent import monkey
 
 '''
     使用gevent下载多张图片
 '''
-# 打补丁
+# 打补丁,是程序能够识别系统的耗时操作以及网络请求
 monkey.patch_all()
 
 
@@ -20,16 +19,18 @@ def down_img(img_url, img_name):
         # 网页获取图片数据资源
         response = urllib.request.urlopen(img_url)
 
-        with open(img_name) as img_file:
+        with open(img_name, 'wb') as img_file:
             # 读取网络数据
             while True:
                 img_data = response.read(1024)
                 if img_data:
+                    # 保存图片
                     img_file.write(img_data)
                 else:
                     break
     except Exception as e:
         print("图片下载异常")
+        print(e)
     else:
         print("图片下载完成")
 
