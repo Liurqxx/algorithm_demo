@@ -3,6 +3,32 @@
 import socket
 import re
 
+'''
+请求报文:
+    请求行：
+    GET / HTTP/1.1
+    请求行格式：
+      请求方式 请求的资源路径 HTTP版本
+
+    请求头：
+    Host: www.baidu.com
+        代表被浏览器请求的服务器地址(端口)
+    Connection: keep-alive
+        代表连接方式 keep-alive-->长连接
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36
+        代表浏览器的访问服务器的身份信息
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        代表浏览器可以接收的文件类型
+    Accept-Encoding: gzip, deflate, br
+        代表浏览器可接受的压缩算法
+    Accept-Language: zh-CN,zh;q=0.9
+        代表浏览器支持的语言
+
+    请求报文组成：
+        请求行\r\n+请求头\r\n+空行(\r\n)+请求体\r\n(浏览器给服务器发送的数据,GET没有数据)
+
+
+'''
 
 
 '''
