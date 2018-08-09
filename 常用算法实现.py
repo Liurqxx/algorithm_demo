@@ -273,7 +273,7 @@ if __name__ == '__main__':
     insert_sort(all_list_data[4])
     # 希尔排序
     shell_sort(all_list_data[5])
-    # 归并合并
+    # 归并排序
     merge_sort_time(all_list_data[6])
     # 堆排序
     heap_time(all_list_data[8])
